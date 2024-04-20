@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task Manager</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <h1>Task Manager</h1>
+            <button id="signout-btn">Sign Out</button>
+        </header>
+
+        <!-- Task Input Form-->
+        <main>
+            <section id="task-management">
+                <h2>Task Management</h2>
+                <form id="task-form">
+                    <input type="text" id="task-input" placeholder="Enter a new task">
+                    <input type="date" id="due-date-input">
+                    <select id="priority-select">
+                        <option value="low">Low Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <button type="submit">Add task</button>
+                </form>
+                <ul id="task-list"></ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Data Nerd Innit</p>
+        </footer>
+
+        <!--Firebase SDK-->
+        <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js"></script>
+        <!--js-->
+        <script src="app.js" type="module"></script>
+    </body>
+</html>
